@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   useEffect(() => {
     // Redirect to the specified URL when the page loads
-    window.location.href = "https://blessed-viper-97.accounts.dev/";
+    window.location.href = "https://blessed-viper-97.accounts.dev/sign-up";
   }, []);
 
   return (
