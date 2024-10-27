@@ -1,7 +1,10 @@
-import type { Metadata } from "next";
+"use client"; // Mark the component as a Client Component
+
+import { useEffect } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ClerkProvider, SignedIn, SignedOut, RedirectToSignIn, UserButton } from '@clerk/nextjs';
+import { metadata } from './metadata'; // Import the metadata from the new file
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,16 +17,16 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: "Archivos",
-  description: "Developed by ufraaan",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  useEffect(() => {
+    // Redirect to the specified URL when the page loads
+    window.location.href = "https://blessed-viper-97.accounts.dev/";
+  }, []);
+
   return (
     <ClerkProvider>
       <html lang="en">
