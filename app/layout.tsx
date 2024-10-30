@@ -1,9 +1,8 @@
 "use client"; // Mark the component as a Client Component
 
-import { useEffect } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
-import { ClerkProvider, SignedIn, SignedOut, RedirectToSignIn, UserButton } from '@clerk/nextjs';
+import { ClerkProvider, SignedOut, RedirectToSignIn, UserButton } from '@clerk/nextjs';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

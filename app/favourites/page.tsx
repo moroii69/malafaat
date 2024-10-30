@@ -3,8 +3,7 @@
 import { useState } from 'react'
 import Link from "next/link";
 import {motion} from "framer-motion";
-import {ArrowLeft, Calendar, Mail, Phone, Star} from "lucide-react";
-import {Progress} from "@/components/ui/progress";
+import {Mail, Phone, Star} from "lucide-react";
 import {
     Dialog,
     DialogContent,
