@@ -44,7 +44,7 @@ export default function FavouritesPage() {
         <div className="min-h-screen bg-white text-gray-900 font-sans flex flex-col">
             <header className="fixed top-0 left-0 right-0 bg-white bg-opacity-90 backdrop-blur-md z-10">
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                    <Link href="/" className="text-2xl font-semibold">
+                    <Link href="https://malafaat.vercel.app/" className="text-2xl font-semibold">
                         Malafaat
                     </Link>
                 </div>
