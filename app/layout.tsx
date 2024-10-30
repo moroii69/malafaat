@@ -21,24 +21,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  useEffect(() => {
-    // Redirect to the specified URL when the page loads
-    window.location.href = "https://blessed-viper-97.accounts.dev/sign-up";
-  }, []);
+  // useEffect(() => {
+  //   window.location.href = "https://blessed-viper-97.accounts.dev/sign-up";
+  // }, []);
 
   return (
     <ClerkProvider>
       <html lang="en">
         <head>
-          {/* Any additional <head> tags can go here */}
         </head>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <SignedIn>
-            <UserButton /> {/* Render UserButton for signed-in users */}
-            {children}    {/* Render the main content for signed-in users */}
-          </SignedIn>
+          {/*<SignedIn>*/}
+            <UserButton />
+            {children}
+          {/*</SignedIn>*/}
           <SignedOut>
-            <RedirectToSignIn redirectUrl="/sign-in" /> {/* Redirects to sign-in page */}
+            <RedirectToSignIn redirectUrl="/sign-in" />
           </SignedOut>
         </body>
       </html>

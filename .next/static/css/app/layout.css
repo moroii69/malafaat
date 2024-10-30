@@ -573,6 +573,9 @@ video {
   white-space: nowrap;
   border-width: 0;
 }
+.pointer-events-none {
+  pointer-events: none;
+}
 .pointer-events-auto {
   pointer-events: auto;
 }
@@ -591,8 +594,23 @@ video {
 .inset-0 {
   inset: 0px;
 }
+.-bottom-12 {
+  bottom: -3rem;
+}
+.-left-12 {
+  left: -3rem;
+}
+.-right-12 {
+  right: -3rem;
+}
+.-top-12 {
+  top: -3rem;
+}
 .left-0 {
   left: 0px;
+}
+.left-1\/2 {
+  left: 50%;
 }
 .left-2 {
   left: 0.5rem;
@@ -611,6 +629,9 @@ video {
 }
 .top-0 {
   top: 0px;
+}
+.top-1\/2 {
+  top: 50%;
 }
 .top-2 {
   top: 0.5rem;
@@ -641,6 +662,12 @@ video {
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+.-ml-4 {
+  margin-left: -1rem;
+}
+.-mt-4 {
+  margin-top: -1rem;
 }
 .mb-12 {
   margin-bottom: 3rem;
@@ -693,6 +720,13 @@ video {
 .hidden {
   display: none;
 }
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+.size-full {
+  width: 100%;
+  height: 100%;
+}
 .h-10 {
   height: 2.5rem;
 }
@@ -728,6 +762,9 @@ video {
 }
 .h-9 {
   height: 2.25rem;
+}
+.h-\[500px\] {
+  height: 500px;
 }
 .h-\[var\(--radix-select-trigger-height\)\] {
   height: var(--radix-select-trigger-height);
@@ -777,6 +814,9 @@ video {
 .w-full {
   width: 100%;
 }
+.min-w-0 {
+  min-width: 0px;
+}
 .min-w-\[8rem\] {
   min-width: 8rem;
 }
@@ -786,11 +826,17 @@ video {
 .max-w-2xl {
   max-width: 42rem;
 }
+.max-w-4xl {
+  max-width: 56rem;
+}
 .max-w-lg {
   max-width: 32rem;
 }
 .max-w-md {
   max-width: 28rem;
+}
+.max-w-sm {
+  max-width: 24rem;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -801,8 +847,22 @@ video {
 .flex-grow {
   flex-grow: 1;
 }
+.grow-0 {
+  flex-grow: 0;
+}
+.basis-full {
+  flex-basis: 100%;
+}
 .caption-bottom {
   caption-side: bottom;
+}
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .translate-x-1 {
   --tw-translate-x: 0.25rem;
@@ -814,6 +874,10 @@ video {
 }
 .translate-y-\[-50\%\] {
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.rotate-90 {
+  --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform {
@@ -836,6 +900,9 @@ video {
 }
 .select-none {
   user-select: none;
+}
+.resize {
+  resize: both;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1112,6 +1179,9 @@ video {
 .pb-6 {
   padding-bottom: 1.5rem;
 }
+.pl-4 {
+  padding-left: 1rem;
+}
 .pl-8 {
   padding-left: 2rem;
 }
@@ -1126,6 +1196,9 @@ video {
 }
 .pt-20 {
   padding-top: 5rem;
+}
+.pt-4 {
+  padding-top: 1rem;
 }
 .pt-5 {
   padding-top: 1.25rem;
@@ -1719,6 +1792,10 @@ body {
     max-width: 425px;
   }
 
+  .sm\:max-w-\[520px\] {
+    max-width: 520px;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1768,6 +1845,10 @@ body {
     max-width: 420px;
   }
 
+  .md\:basis-1\/3 {
+    flex-basis: 33.333333%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1775,9 +1856,19 @@ body {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .md\:shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
 }
 
 @media (min-width: 1024px) {
+
+  .lg\:basis-1\/2 {
+    flex-basis: 50%;
+  }
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
